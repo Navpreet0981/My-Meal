@@ -1,0 +1,241 @@
+extends base.pug
+
+block scripts   
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/Order.css
+
+block content
+ .container
+   .category-header
+    h1 Pizza Menu
+
+   .category-menu
+    //pizza section
+    .menu-item
+      .menu-item-image
+        img(src='/static/peppy_pizza.2.png', alt='Pizza Image')
+      .menu-item-details
+        h2 Peppy Paneer Pizza
+        p A Peppy Paneer Pizza is a tangy and flavoured delight, featuring succulent panner, vibrant bell papers ,red paprika and a zesty tomato sauce.
+        p Price: 200/-
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/indo.jpg', alt='Pizza Image')
+      .menu-item-details
+        h2 Indo Chicken Pizza
+        p Our Indo Chicken Pizza is delicious fusion of rich and creamy flavours of creamy sauce, topped up with makhni. 
+        p Price: 250/-
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/magherita.jpg', alt='Pizza Image')
+      .menu-item-details
+        h2 Margherita
+        p A classic pizza topped with tomato, mozzarella, and fresh basil.
+        p Price: 150/-
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/italian.jpg', alt='Pizza Image')
+      .menu-item-details
+        h2 Italian Farm Pizza
+        p A classic pizza topped with flavours of italy, combination of ripened tomato, earth mushrooms,fresh black olives, capsicum .
+        p Price: 300/-
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/veg.jpg', alt='Pizza Image')
+      .menu-item-details
+        h2 Veggie Supreme Pizza
+        p It is a garden inspired supreme pizza filled with bountfull selected vegetable like bell peppers, baby corn, jalapenos, corn, black olives, rich tomato sauce.
+        p Price: 350/-
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/mushroom.jpg', alt='Pizza Image')
+      .menu-item-details
+        h2 Mushroom Veg Pizza 
+        p It is tengy spicy pizza with vibrant ingredients like Mushroom, crispy crust, smothered in zesty tomato sauce, melty chese bread .
+        p Price: 400/- 
+        button(class="order-btn") 
+            | Order Now
+
+
+   .category-header
+    h1 Burger Menu
+
+   .category-menu
+    // Burger Section
+    .menu-item
+      .menu-item-image
+        img(src='/static/classic_bg.jpg', alt='Burger Image')
+      .menu-item-details
+        h2 Classic Burger
+        p A delicious classic burger with lettuce, tomato, and cheese.
+        p Price: 35/-
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/allo_tikki_bg.jpg', alt='Burger Image')
+      .menu-item-details
+        h2 Aloo Tikki Burger
+        p A classic Burger filled with vagetables and fried allo tikky.
+        p Price: 50/-
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/cheese_bg.jpg', alt='Burger Image')
+      .menu-item-details
+        h2 Cheese Burst Burger
+        p A juicy potato and peas patty ,juicy tomatoes and a slice of cheese.
+        p Price: 80/-
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/veggie_bg.jpg', alt='Burger Image')
+      .menu-item-details
+        h2 Veggie King Burger
+        p A fried veggie patty made with potato, carror, corn, bean and pea .
+        p Price: 120/-
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/big_sno_bg.jpg', alt='Burger Image')
+      .menu-item-details
+        h2 Big SNO Burger
+        p A SNO Burger is made up of two patties: A Potato and a Veggie patty. It's features nachos ,jalapenos, lettuce and mayonnaise on top.
+        p Price: 200/-
+        button(class="order-btn") 
+            | Order Now
+
+
+   .category-header
+    h1 Sushi Menu
+
+   .category-menu
+    // Sushi Section
+    .menu-item
+      .menu-item-image
+        img(src='/static/sushi-image.jpg', alt='Sushi Image')
+      .menu-item-details
+        h2 Sushi Platter
+        p A mouthwatering sushi platter with a variety of sushi rolls.
+        p Price: 150/-
+        button(class="order-btn") 
+            | Order Now
+
+
+   .category-header
+    h1 Paratha Menu
+
+   .category-menu
+    // paratha Section
+    .menu-item
+      .menu-item-image
+        img(src='/static/paratha-image.jpg', alt='Paratha Image')
+      .menu-item-details
+        h2 Paneer Steam Paratha
+        p A paratha made in steam and a paneer inside the paratha .
+        p Price: 100/-
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/paratha-image.jpg', alt='Paratha Image')
+      .menu-item-details
+        h2 Butter Paratha
+        p A paratha made on tawa and butter sparkled on it.
+        p Price: 120/-
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/paratha-image.jpg', alt='Paratha Image')
+      .menu-item-details
+        h2 Mirchi Paratha
+        p A pratha with red mirchi inside it made in owen .
+        p Price: 150/-
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/paratha-image.jpg', alt='Paratha Image')
+      .menu-item-details
+        h2 Lacha Paratha
+        p A mouthwatering Lacha Paratha with a variety of flour rolls.
+        p Price: 200/-
+        button(class="order-btn") 
+            | Order Now
+
+   .category-header
+    h1 Chicken Menu
+
+   .category-menu
+    //  Chicken Section
+    .menu-item
+      .menu-item-image
+        img(src='/static/chicken-image.jpg', alt='Chicken Image')
+      .menu-item-details
+        h2 Tandori Chicken
+        p Juicy seasoned chicken with freshly ground spices and grilled to perefection.
+        p Price: 300/-
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/chicken-image.jpg', alt='Chicken Image')
+      .menu-item-details
+        h2 Boneless Crispy Chicken
+        p Juicy seasoned chicken without bones inside it.
+        p Price: 360/-
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/chicken-image.jpg', alt='Chicken Image')
+      .menu-item-details
+        h2 Chicken Tikka
+        p Super soft chunks of chicken coated are with spicy and peppery masala grilled to perfection.
+        p Price: 400/-
+
+        button(class="order-btn") 
+            | Order Now
+
+    .menu-item
+      .menu-item-image
+        img(src='/static/chicken-image.jpg', alt='Chicken Image')
+      .menu-item-details
+        h2 Kali Mirch Chicken Tikka
+        p Spicy flavoured chicken mince shaped onto skewers and grilled to perferction.
+        p Price: 450/-
+        button(class="order-btn") 
+            | Order Now
+    // Add more menu items here as needed
+

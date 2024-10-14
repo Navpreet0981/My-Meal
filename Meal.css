@@ -1,0 +1,52 @@
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+
+
+}
+
+
+
+
+/* Home section */
+#home{
+    height: 467px;
+    padding: 44px 11px;
+
+}
+#home::before{
+    height: 480px;
+}
+
+#home p{
+    font-size: 13px;
+}
+.btn{
+    margin: 16px;
+    padding: 6px 9px;
+}
+/* Service section */
+#services{
+    flex-direction: column;
+}
+
+
+
+
+/* Client section */
+#clients{
+    overflow: hidden;
+}
+
+
+/* Contact Us section */
+
+
+/* utility classes */
+.h-primary{
+    font-size: 36px;
+}

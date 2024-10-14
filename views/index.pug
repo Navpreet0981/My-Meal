@@ -1,0 +1,70 @@
+doctype html
+html
+  head
+    title MyMeal.com
+    style 
+      include ../static/style.css
+  body
+    nav#navbar
+      ul
+        div#logo 
+          img(src="/static/foodie.png")
+          | MML
+        li
+          a(href= "/") HOME
+        li
+          a(href= "/") ABOUT
+        li
+          a(href= "/") CONTACT US
+        li
+          a(href= "/") ORDER NOW
+        li
+          a(href= "/") MORE
+    section#introSection
+      h1 Welcome to MyMeal.com
+      p Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Debitis earum libero dolore? Quibusdam inventor 
+      p Lorem ipsum, dolor sit amet consectetur  elit.
+        Odit doloribus rem illo
+      button.btn Order Now
+
+    section#ServicesSection
+      h2 Our Mission
+
+      div.card 
+        h3 Our Services 
+        div.cardbox 
+          div.cardImg 
+            img(src="/static/pizza.png", alt="")
+          div.cardContent    
+            p This Is The Best Food Ordering Site In The Punjab. We Are Here To Serve Food Of Your interest.
+
+      div.card 
+        h3 Bulk Ordering
+        div.cardbox 
+          div.cardImg 
+            img(src="/static/egg_breads.png", alt="")
+          div.cardContent    
+            p We Are Here To Serve You The Food You Want To Or The Food You like Most. 
+
+      div.card 
+        h3 Bulk Ordering Food Ordering
+        div.cardbox 
+          div.cardImg 
+            img(src="/static/delivery_boy.png", alt="")
+          div.cardContent    
+            p Fast and Fast Delivery On Your First Order.
+
+    section#sponsorSection
+      h2 Our Sponsors 
+      #sponsors 
+        img(src="/static/Zomato.png", alt="Sponsors", class="spImage")
+        img(src="/static/foodpanda.png", alt="Sponsors", class="spImage")
+        img(src="/static/swiggy.png", alt="Sponsors", class="spImage")
+
+    
+    footer#footer
+      | Copyright 2023 MyMeal.com | All rights reserved
+
+    script
+      include ../static/index.js

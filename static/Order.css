@@ -1,0 +1,182 @@
+/* Style for the order section */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&family=Ysabeau+Office:ital,wght@1,500&display=swap');
+
+
+/* logo and image*/
+#logo {
+    color: white;
+    margin: 13px 19px;
+}
+
+#logo:hover {
+    color: rgb(139, 138, 138);
+
+}
+
+#logo img {
+    margin: -3px 10px;
+    height: 41px;
+    filter: invert(100%);
+}
+
+#logo img:hover {
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+#navbar {
+    height: 80px;
+    background-color: rgb(48, 47, 47);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+#navbar::before {
+    content: "";
+    background-color: inherit;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    margin: 9px 0px;
+    padding: 6px 25px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(139, 138, 138);
+}
+
+.order-btn {
+    padding: 3px 8px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 0px;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* You can add more unique styles, fonts, and colors to make it distinct */
+
+/* Specific styling for menu items */
+.container{
+    /* background: url('/static/background.2.jpg') center center/cover no-repeat; */
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+.category-header {
+    h1 {
+        font-size: 32px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+}
+
+.category-menu {
+    .menu-item {
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+        /* Background color for each menu item */
+        padding: 20px;
+        border-radius: 5px;
+        /* Rounded corners for each menu item */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Shadow for each menu item */
+        display: flex;
+        align-items: center;
+    
+
+        .menu-item-image {
+            flex: 1;
+            padding: 10px;
+
+            img {
+                max-width: 100%;
+                /* Ensure images don't overflow */
+                height: auto;
+                /* Maintain aspect ratio */
+                display: block;
+                /* Remove image spacing */
+                margin: 0 auto;
+                /* Center the image horizontally */
+            }
+        }
+
+        .menu-item-details {
+            flex: 2;
+            padding: 10px;
+
+            h2 {
+                font-size: 24px;
+                /* Adjust heading size */
+                color: #333;
+                margin-bottom: 10px;
+            }
+            .menu-item-image{
+                max-width: 210px;
+                max-height: 170px;
+                padding: 0px 10px;
+                width: 100%;
+                height: auto;
+            }
+
+
+            p {
+                font-size: 16px;
+                /* Adjust paragraph size */
+                color: #555;
+                margin-bottom: 10px;
+            }
+
+            button.order-button {
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 18px;
+                cursor: pointer;
+                transition: background-color 0.2s;
+                /* Smooth hover transition */
+            }
+
+            button.order-button:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+}
+
+#footer{
+    width: 100%;
+    position: absolute;
+    top: 392rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

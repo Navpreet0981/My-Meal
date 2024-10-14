@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&family=Ysabeau+Office:ital,wght@1,500&display=swap');
+
+* {
+    font-family: 'Ysabeau Office', sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+ /* logo and image*/
+ #logo {
+    color: white;
+    margin: 13px 19px;
+}
+
+#logo img {
+    margin: -3px 10px;
+    height: 41px;
+    filter: invert(100%);
+}
+
+#logo img:hover {
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    margin: 9px 0px;
+    padding: 6px 25px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(133, 127, 127);
+}
+
+#btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+/* Intro Section */
+#introSection {
+    font-family: 'Ysabeau Office', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 747px;
+    color: white;
+    font-size: 33px;
+    margin-top: -162px;
+    background: url('/static/background.1.jpg') center center/cover no-repeat;
+}
+
+#introSection h1 {
+    font-size: 50px;
+    padding: 5px;
+}
+#introSection p{
+    font-size: 30px;
+
+}
+
+/* ServicesSection */
+#ServicesSection {
+    color: black;
+    background-color: white;
+    height: 300px;
+    width: 90%;
+    margin: auto;
+
+}
+
+#ServicesSection h2 {
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    padding-top: 12px;
+    margin: auto;
+    font-size: 35px;
+}
+
+.card {
+    font-family: 'Ysabeau Office', sans-serif;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 22px;
+    width: auto;
+    margin: 20px 10px;
+}
+
+.card h3 {
+    font-family: 'Noto Serif', serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cardbox {
+    color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.cardbox img {
+    padding: 11px 2px;
+    margin: 14px 26px;
+    height: 100px;
+    width: 50px;
+}
+
+.cardContent {
+    font-family: 'Ysabeau Office', sans-serif;
+    padding: 0px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: -100px 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sponsor Section */
+#sponsorSection {
+    position: absolute;
+    top: 79rem;
+    color: white;
+    background-color:#998f8f;
+    height: 300px;
+}
+
+#sponsorSection h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+#sponsors {
+    display: flex;
+    flex-direction: row;
+    height: 220px;
+    margin: 0px 245px;
+    padding: 0px 105px
+}
+
+.spImage {
+    margin: 11px 20px;
+    padding: 68px 0px;
+}
+
+
+/* Footer */
+#footer {
+    position: absolute;
+    top: 96rem;
+    width: 100%;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    height: 20px;
+}

@@ -1,0 +1,26 @@
+doctype html
+html 
+    head 
+        title MyMeal.com
+        block scripts
+        block style
+            
+    body 
+        nav#navbar
+            ul
+                div#logo 
+                    img(src="/static/foodie.png")
+                    | MML
+                li
+                    a(href= "/") HOME
+                li
+                    a(href= "/") ABOUT
+                li
+                    a(href= "/contact") CONTACT US
+                li
+                    a(href= "/order") ORDER NOW
+                li
+                    a(href= "/") MORE
+        block content
+        footer#footer
+            | Copyright 2023 MyMeal.com | All rights reserved
